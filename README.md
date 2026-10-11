@@ -1,478 +1,241 @@
-# Netflix Clone
+# 🎬 Netflix Clone
 
-A modern, responsive Netflix-inspired video streaming website built with HTML5, CSS3, and JavaScript. This project showcases a sleek streaming platform UI with interactive features and smooth animations.
+A modern, responsive Netflix-inspired streaming website built using HTML5, CSS3, JavaScript, jQuery, and Bootstrap. This project features an attractive dark-themed interface, interactive movie sliders, search functionality, category filtering, and a personalized My List watchlist.
 
-![Netflix Clone](https://img.shields.io/badge/Status-Active-brightgreen)
+![Project Status](https://img.shields.io/badge/Status-Active-brightgreen)
+![Version](https://img.shields.io/badge/Version-2.0.0-orange)
+![HTML5](https://img.shields.io/badge/HTML5-orange)
+![CSS3](https://img.shields.io/badge/CSS3-blue)
+![JavaScript](https://img.shields.io/badge/JavaScript-yellow)
 ![License](https://img.shields.io/badge/License-MIT-blue)
-![Version](https://img.shields.io/badge/Version-1.0.0-orange)
 
-## 🎬 Features
+## ✨ Features
 
-### Core Features
-- **Responsive Design** - Fully responsive layout that works on desktop, tablet, and mobile devices
-- **Interactive Hero Slider** - Dynamic carousel with featured movies and shows with animation effects
-- **Movie/Show Categories** - Multiple sections including:
-  - Top Picks For You (Favorites)
-  - Movies
-  - Trending Movies (Top 10)
-  - Suggested Sports
-  - Trending Shows
-- **Smooth Animations** - Fade-in, scale, and transform effects on content
-- **User Dropdown Menu** - Profile management, settings, pricing, and logout options
-- **Search Functionality** - Quick search bar for finding content
-- **Notification System** - Bell icon with notification dropdown
-- **Episode Management** - Season selection and episode viewing
-- **Video Player Integration** - YouTube trailer links for movies and shows
-- **Rating Display** - IMDB ratings and content information
-- **Social Sharing** - Share functionality for social media platforms
+### 🎥 Core Features
 
-### Technical Features
-- **No Dependencies** - Uses vanilla JavaScript (with jQuery for DOM manipulation)
-- **CSS Animations** - Custom animations using CSS3 keyframes
-- **Carousel Libraries** - Slick Slider and Owl Carousel for smooth content scrolling
-- **Mobile-First** - Optimized for all screen sizes with Bootstrap 4
-- **SEO Friendly** - Proper HTML5 semantic structure
-- **Font Awesome Icons** - Beautiful icon set for UI elements
-- **Bootstrap Grid** - Responsive grid system for layout
+- **Responsive Design** – Works across desktop, tablet, and mobile screens.
+- **Hero Slider** – Interactive featured movie and show carousel.
+- **Movie Collections** – Browse favorites, trending movies, top picks, and shows.
+- **Smooth Animations** – Attractive transitions and hover effects.
+- **Search Functionality** – Search for movies and shows by title.
+- **Category Filter** – Filter available movies by Action, Comedy, Horror, Drama, or view All.
+- **My List / Watchlist** – Add movies to your personal saved list using the existing movie-card buttons.
+- **Persistent Watchlist** – Saved movies remain available after refreshing the browser through localStorage.
+- **Remove Saved Movies** – Remove individual movies from My List.
+- **Movie Information** – Display movie posters, ratings, and duration where available.
+- **Navigation Menus** – Interactive navigation, search, notification, and profile dropdowns.
+- **Episode Selection** – Season dropdowns and episode-related content.
+- **Trailer Links** – Access linked trailers for supported movies and shows.
+- **Social Sharing** – Sharing options available in the interface.
 
-## 📁 Project Structure
+### 🚀 Additional Improvements
 
-```
-Netflix Clone/
-├── index.html          # Main HTML file (4647 lines)
-├── avng.html          # Avengers movie page
-├── main.js            # JavaScript functionality
-├── style.css          # Custom CSS styles (2429 lines)
-├── README.md          # Project documentation
-│
-├── css/               # CSS Libraries & Frameworks
+- Interactive movie search results.
+- Dynamic saved-movie count.
+- Automatic My List section rendering.
+- Add/remove state indicators on movie cards.
+- Category filtering that works with supported movie sections.
+- Browser-based storage for saved movies.
+- Responsive movie cards and content layouts.
+
+## 🛠️ Technologies Used
+
+### Frontend
+- HTML5
+- CSS3
+- JavaScript
+- jQuery 3.4.1
+- Bootstrap 4
+
+### Libraries
+- Slick Slider
+- Owl Carousel
+- Slick Animation
+- Font Awesome
+- Select2
+- Magnific Popup
+- Animate.css
+- Flatpickr
+
+### Browser Storage
+- localStorage for saving the My List watchlist.
+
+## 📂 Project Structure
+
+```text
+Netflix-Clone/
+├── index.html
+├── avng.html
+├── main.js
+├── style.css
+├── README.md
+├── css/
 │   ├── bootstrap.min.css
-│   ├── all.min.css
-│   ├── animate.min.css
-│   ├── magnific-popup.css
-│   ├── owl.carousel.min.css
-│   ├── select2.min.css
-│   ├── select2-bootstrap4.min.css
 │   ├── slick.css
 │   ├── slick-theme.css
-│   └── slick-animation.css
-│
-├── js/                # JavaScript Libraries
+│   ├── owl.carousel.min.css
+│   └── other stylesheets
+├── js/
 │   ├── jquery-3.4.1.min.js
 │   ├── bootstrap.min.js
-│   ├── popper.min.js
 │   ├── slick.min.js
-│   ├── slick-animation.min.js
 │   ├── owl.carousel.min.js
-│   ├── select2.min.js
-│   ├── magnific-popup.min.js
-│   └── flatpickr.min.js
-│
-├── images/            # Image Assets
-│   ├── episodes/      # Episode thumbnails
-│   ├── favorite/      # Favorite movie posters
-│   ├── footer/        # Footer images
-│   ├── notify/        # Notification images
-│   ├── parallax/      # Parallax background images
-│   ├── popular/       # Popular movie covers
-│   ├── slider/        # Hero slider images
-│   ├── suggested/     # Suggested content images
-│   ├── top-10/        # Top 10 trending images
-│   ├── trending/      # Trending shows images
-│   ├── tvthrillers/   # TV thriller images
-│   ├── user/          # User profile images
-│   ├── logo.png       # Netflix-style logo
-│   └── play.png       # Play button icon
-│
-└── video/             # Video Assets (currently empty)
+│   └── other libraries
+├── images/
+│   ├── episodes/
+│   ├── favorite/
+│   ├── footer/
+│   ├── notify/
+│   ├── popular/
+│   ├── slider/
+│   ├── suggested/
+│   ├── top-10/
+│   ├── trending/
+│   └── user/
+└── video/
 ```
 
-## 🎨 Key Sections
+*Note: The structure above represents the main project files and folders. Your repository may contain additional assets and libraries.*
 
-### Header Navigation
-- Fixed sticky header with logo and navigation menu
-- Dropdown menus for submenu items
-- Search bar with smooth expand animation
-- Notification center
-- User profile menu
+## 🔍 Search and Category Filtering
 
-### Hero Slider
-- 3 featured movies/shows with auto-rotating slides
-- Movie details (title, rating, duration, content rating)
-- Star ratings display
-- Play Now and More Details buttons
-- Watch Trailer links
+### Search
+- Search for movies and shows by title.
+- Display matching results in a dedicated results section.
+- Clear the search to return to the normal homepage.
 
-### Content Sections
-1. **Top Picks For You** - Personalized movie recommendations
-2. **Movies** - Featured movie collection
-3. **Trending Movies** - Top 10 most popular content
-4. **Suggested Sports** - Sports content recommendations
-5. **Avatar Parallax Section** - Feature with parallax effect
-6. **Trending Shows** - Latest TV shows with tabs for Overview, Episodes, Trailers, and Similar
+### Categories
+Available filters include:
 
-### Movie Card Features
-- Hover effects with scale and shadow
-- Play Now button
-- Social sharing options
-- Like/Heart counter
-- Add to list option
-- Age rating badge
-- Duration display
+- **All** – Display all supported movies.
+- **Action** – Display mapped action titles.
+- **Comedy** – Display mapped comedy titles.
+- **Horror** – Display mapped horror titles.
+- **Drama** – Display mapped drama titles.
+
+The category filter uses a predefined movie-to-genre mapping, so only titles included in that mapping are assigned to a specific category.
+
+## ❤️ My List / Watchlist
+
+The My List feature lets users save movies they want to watch later.
+
+### How It Works
+
+1. Click the **+** icon on a movie card to add it to My List.
+2. The saved movie appears in the My List section.
+3. Click the saved movie's icon again to remove it.
+4. Use the individual Remove button to delete a saved movie.
+5. Refresh the browser to verify that saved movies persist.
+
+The watchlist uses browser `localStorage`. Saved movies are stored in the current browser and are not automatically synchronized across different devices or browsers.
 
 ## 🚀 Getting Started
 
 ### Prerequisites
-- A modern web browser (Chrome, Firefox, Safari, Edge)
-- No backend server required for basic functionality
+
+- A modern web browser such as Chrome, Firefox, Edge, or Safari.
+- Visual Studio Code is recommended for development.
+- Git installed if you want to clone the repository.
 
 ### Installation
 
-1. **Clone the repository:**
-   ```bash
-   git clone https://github.com/yourusername/netflix-clone.git
-   cd netflix-clone
-   ```
+**1. Clone the repository**
 
-2. **Open in browser:**
-   - Double-click `index.html` to open in your default browser
-   - Or use a local server:
-     ```bash
-     # Using Python 3
-     python -m http.server 8000
-     
-     # Using Python 2
-     python -m SimpleHTTPServer 8000
-     
-     # Using Node.js (if you have http-server installed)
-     http-server
-     ```
-
-3. **Access the site:**
-   - Open `http://localhost:8000` in your browser
-
-## 💻 Technologies Used
-
-### Frontend Framework & UI
-- **HTML5** - Semantic markup structure
-- **CSS3** - Modern styling with animations and transitions
-- **Bootstrap 4** - Responsive grid system and components
-- **jQuery 3.4.1** - DOM manipulation and event handling
-
-### Carousel & Slider Libraries
-- **Slick Slider** - Main content carousel with smooth animations
-- **Owl Carousel** - Episode carousel with responsive settings
-- **Slick Animation** - Custom animation effects for sliders
-
-### UI Components & Icons
-- **Font Awesome 4.7** - Icon library for UI elements
-- **Select2** - Enhanced select dropdowns
-- **Magnific Popup** - Lightbox for media display
-- **FlatPickr** - Date picker functionality
-- **Animate.css** - Pre-built CSS animations
-
-## 📱 Responsive Breakpoints
-
-The site is optimized for:
-- **Desktop** (1200px and above)
-- **Large Screens** (1366px - 1499px)
-- **Tablets** (768px - 991px)
-- **Mobile** (480px - 767px)
-- **Small Mobile** (below 480px)
-
-### Responsive Features
-- Collapsible mobile navigation menu
-- Adjusted font sizes for smaller screens
-- Modified carousel settings for tablet/mobile
-- Touch-friendly button sizes
-- Optimized image sizing
-
-## 🎯 Usage Examples
-
-### Adding a New Movie/Show
-1. Add a new `<li class="slide-item">` to the appropriate section
-2. Update the image and content information
-3. Style will automatically apply from existing CSS classes
-
-### Customizing Colors
-Edit the primary color in `style.css`:
-```css
-/* Current: Netflix Red */
-.text-primary {
-    color: #e50914 !important;
-}
-
-/* Change to your preferred color */
-.text-primary {
-    color: #YOUR_COLOR !important;
-}
+```bash
+git clone https://github.com/omkar-045/Netflix-Clone.git
 ```
 
-### Modifying Header Background
-```css
-header#main-header {
-    background: rgba(20, 20, 20, 0.5) !important;
-    /* Adjust the alpha value (0.5) to control transparency */
-}
+**2. Open the project folder**
+
+```bash
+cd Netflix-Clone
 ```
 
-## 🔧 Configuration
+**3. Run the website**
 
-### JavaScript Features
-- **Header Sticky Animation** - Automatically activates on scroll
-- **Search Toggle** - Click search icon to expand
-- **Carousel Settings** - Configure slide count, speed, and breakpoints in `main.js`
-- **Season Selection** - Dropdown for episode season selection
+Open `index.html` in your browser, or use the Live Server extension in Visual Studio Code.
 
-### CSS Customization
-- Font Family: 'Playfair Display' (headings), 'Roboto' (body)
-- Primary Color: #e50914 (Netflix Red)
-- Background: #141414 (Dark Gray)
-- Text Color: #d1d0cf (Light Gray)
+**4. Explore the features**
 
-## 📊 Performance Optimizations
+Browse movie collections, use search and category filters, and save movies to My List.
 
-- **Minified CSS/JS** - All libraries are minified versions
-- **Lazy Loading** - Images and content loaded progressively
-- **CSS Animations** - Hardware-accelerated transforms
-- **Responsive Images** - Images scale based on device
-- **Efficient Selectors** - Optimized jQuery selectors
+## 🌐 Live Demo
 
-## 🌐 Browser Compatibility
+After enabling GitHub Pages, visit:
 
-| Browser | Support |
-|---------|---------|
-| Chrome  | ✅ Full |
-| Firefox | ✅ Full |
-| Safari  | ✅ Full |
-| Edge    | ✅ Full |
-| IE 11   | ⚠️ Partial |
+[Netflix Clone – Live Demo](https://omkar-045.github.io/Netflix-Clone/)
 
-## 🎬 Featured Content
-
-### Movies
-- Avengers
-- Frozen
-- The Conjuring
-- Insidious
-- War
-- Five Feet Apart
-- Chhichore
-- Doctor Strange
-- Mulan
-- Laxmii
-- Captain America
-- Life of Pi
-- Mission Mangal
-
-### Shows
-- The Crown
-- Harry Potter
-- The Queen's Gambit
-- Scam 1992
-- Stranger Things
-- BoJack Horseman
-- Peaky Blinders
-
-### Sports
-- Basketball
-- Volleyball
-- Cricket
-- Golf
+*The live demo link works once GitHub Pages has finished deployment and the website's asset paths are configured correctly.*
 
 ## 🎨 Design Highlights
 
-- **Dark Theme** - Easy on the eyes with Netflix-style dark background
-- **Modern Gradients** - Subtle gradient overlays for visual depth
-- **Smooth Transitions** - 0.3s to 0.6s transitions for all interactive elements
-- **Hover Effects** - Scale, shadow, and color change animations
-- **Typography** - Clean, readable fonts with proper hierarchy
-- **Icon Integration** - Consistent use of Font Awesome icons throughout
+- Netflix-inspired dark interface.
+- Red accent colors.
+- Movie poster hover effects.
+- Smooth slider transitions.
+- Responsive content layout.
+- Interactive navigation and dropdown menus.
+- Organized movie and show sections.
 
-## 📝 Code Examples
+## 📱 Responsive Design
 
-### Adding Click Event
-```javascript
-jQuery('.share-toggle').on('click', function() {
-    // Your code here
-});
-```
+The interface is designed to support:
 
-### Slick Carousel Configuration
-```javascript
-jQuery('.favorites-slider').slick({
-    dots: false,
-    arrow: true,
-    infinite: true,
-    speed: 300,
-    autoplay: false,
-    slidesToShow: 4,
-    slidesToScroll: 1
-});
-```
+- Desktop screens.
+- Laptops.
+- Tablets.
+- Mobile phones.
 
-### Responsive Image Handling
-```html
-<img src="images/favorite/f1.jpg" class="img-fluid" alt="Movie Title" />
-```
+Responsive layouts and carousel settings help adapt the interface to different screen sizes.
 
-## 🛠️ Troubleshooting
+## ⚙️ Customization
 
-### Carousel Not Working
-- Ensure Slick CSS and JS libraries are loaded
-- Check browser console for JavaScript errors
-- Verify image paths are correct
+### Change the Theme
 
-### Styling Issues
-- Clear browser cache (Ctrl+Shift+Delete)
-- Check if style.css is loading properly
-- Ensure no conflicting CSS rules
+Edit `style.css` to customize colors, fonts, backgrounds, and animations.
 
-### Mobile Menu Not Opening
-- Verify Bootstrap JS is loaded
-- Check jQuery version compatibility
-- Ensure correct HTML structure
+### Add Movie Content
 
-## 📚 Learning Resources
+Update the appropriate movie-card HTML in `index.html`, including its title, poster, and related details.
 
-- [Bootstrap 4 Documentation](https://getbootstrap.com/docs/4.0/)
-- [jQuery Documentation](https://jquery.com/docs/)
-- [Slick Carousel](https://kenwheeler.github.io/slick/)
-- [Owl Carousel](https://owlcarousel2.github.io/OwlCarousel2/)
-- [Font Awesome Icons](https://fontawesome.com/icons)
+### Modify JavaScript Functionality
 
-## 🔐 Security Considerations
+Edit `main.js` to adjust sliders, search behavior, category filtering, and My List functionality.
 
-- No sensitive data is stored in the frontend
-- All external links should be verified for security
-- Consider adding Content Security Policy (CSP) headers
-- Sanitize any user input if adding backend functionality
+## 🔮 Future Enhancements
+
+- [ ] Backend integration.
+- [ ] User authentication and profiles.
+- [ ] Database integration for movies and users.
+- [ ] Real video streaming functionality.
+- [ ] Server-side watchlist synchronization.
+- [ ] Advanced filters and sorting.
+- [ ] Improved accessibility.
+- [ ] Progressive Web App (PWA) support.
+
+## 📌 Project Scope
+
+This project is a frontend demonstration of a Netflix-inspired streaming platform. It focuses on responsive web design, JavaScript interactivity, UI components, and browser-based watchlist storage.
+
+It does not currently represent a complete production streaming service with backend authentication, a streaming infrastructure, or a movie database.
+
+## 👨‍💻 Author
+
+**Omkar Salunkhe**
+
+- GitHub: [@omkar-045](https://github.com/omkar-045)
+- Project Repository: [Netflix-Clone](https://github.com/omkar-045/Netflix-Clone)
+
+## 🙏 Acknowledgements
+
+- Inspired by Netflix's streaming interface and user experience.
+- Built using open-source frontend libraries and tools.
+- Developed as a learning project to improve frontend development skills.
 
 ## 📄 License
 
-This project is licensed under the MIT License - see the LICENSE file for details.
-
-```
-MIT License
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-```
-
-## 👥 Contributing
-
-Contributions are welcome! Here's how to contribute:
-
-1. **Fork the repository**
-   ```bash
-   git clone https://github.com/yourusername/netflix-clone.git
-   ```
-
-2. **Create a feature branch**
-   ```bash
-   git checkout -b feature/AmazingFeature
-   ```
-
-3. **Make your changes**
-   - Update HTML for new content
-   - Modify CSS for styling changes
-   - Enhance JavaScript for new functionality
-
-4. **Commit your changes**
-   ```bash
-   git commit -m 'Add some AmazingFeature'
-   ```
-
-5. **Push to the branch**
-   ```bash
-   git push origin feature/AmazingFeature
-   ```
-
-6. **Open a Pull Request**
-
-## 🐛 Bug Reports
-
-Found a bug? Please open an issue with:
-- Description of the bug
-- Steps to reproduce
-- Expected behavior
-- Actual behavior
-- Browser and OS information
-
-## 💡 Future Enhancements
-
-- [ ] Backend integration with Node.js/Express
-- [ ] User authentication and account management
-- [ ] Database integration for content management
-- [ ] Video streaming capability
-- [ ] User watchlist/favorites functionality
-- [ ] Real-time notifications
-- [ ] Advanced search filters
-- [ ] Dark/Light theme toggle
-- [ ] Multi-language support
-- [ ] Progressive Web App (PWA) features
-
-## 📞 Contact & Support
-
-- **GitHub Issues** - For bug reports and feature requests
-- **Email** - [mdshehzad141@gmail.com]
-
-## 🙏 Acknowledgments
-
-- Inspired by Netflix's modern UI/UX design
-- Built with open-source libraries and frameworks
-- Thanks to all contributors and users
-
-## 📈 Project Statistics
-
-- **HTML Lines** - 4,647
-- **CSS Lines** - 2,429
-- **JavaScript Libraries** - 9
-- **CSS Libraries** - 10
-- **Total Images** - 50+
-- **Responsive Breakpoints** - 5
-
-## 🎯 Development Roadmap
-
-### Phase 1 (Complete)
-- ✅ Frontend UI/UX design
-- ✅ Responsive layout
-- ✅ Interactive components
-- ✅ Animation effects
-
-### Phase 2 (In Progress)
-- 🔄 Backend API integration
-- 🔄 User authentication
-
-### Phase 3 (Planned)
-- ⏳ Video streaming
-- ⏳ Payment gateway integration
-- ⏳ Admin panel
-
-## 📖 Additional Notes
-
-This project is a frontend demonstration of a Netflix-like streaming platform. It's designed for educational purposes and showcases:
-- Modern responsive web design
-- Frontend animation techniques
-- jQuery and JavaScript DOM manipulation
-- Bootstrap grid system
-- CSS3 advanced features
-
-To add backend functionality, consider integrating:
-- Node.js/Express.js for server
-- MongoDB or PostgreSQL for database
-- Authentication with JWT
-- Video streaming service (like AWS S3)
+This project is intended for educational and portfolio purposes. If you distribute it, ensure you have the rights to the included images, logos, and other third-party assets. Add a `LICENSE` file if you intend to publish the project under a specific open-source license.
 
 ---
 
-**Created with ❤️ by [MD SHEHZAD]**
-
-Last Updated: November 26, 2025
+**Created with ❤️ by Omkar Salunkhe**
